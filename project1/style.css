@@ -9,6 +9,11 @@ body{
     font-size:12px;
 }
 
+.blind{
+opacity:0;
+height:40px;
+}
+
 a{
     color:inherit;
     text-decoration: none;
@@ -124,4 +129,192 @@ input{
 
 .thisweek{
     width:195px;
+}
+
+.thisweek img{
+    vertical-align: middle;
+}
+
+.thisweekdesc{
+    font-family: 'dotum','sans-serif';
+    font-weight:bold;
+    font-size:12px;
+    color:#FFF;
+    line-height: 1;
+}
+
+.thisweek li{
+    margin-bottom:12px;
+}
+.special{
+    margin-left:16px;
+}
+
+.highlight ul, .special{
+    position:relative;
+    display:block;
+    margin-top:8px;
+}
+
+
+
+/* 컨텐츠 라인 */
+.contents{
+    display:flex;
+    height:330px;
+}
+
+.contentleft{
+    width:418px;
+    border-right:1px solid #e5e5e5;
+
+}
+
+.bibleresearch{
+    background:url(./assets/titleResearch.jpg);
+    background-repeat: no-repeat;
+    height:117px;
+}
+
+.beliefguide{
+    background:url(./assets/titleGuide.jpg);
+    background-repeat: no-repeat;
+    height:119px;
+}
+
+.beliefraise{
+    display:flex;
+    flex-direction:row;
+    flex-wrap: nowrap;
+}
+
+
+.contentcenter{
+    width:289px;
+    border-right:1px solid #e5e5e5;
+}
+
+.hovering{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#f7f7f7;
+}
+
+.hovering div{
+    width:142px;
+    height:26px;
+    border-bottom:1px solid  #e5e5e5;
+    font-size:12px;
+    line-height: 210%;
+    text-align: center;
+    font-weight: 900;
+    font-family:'Malgun Gothic';
+    color:#656565;
+}
+
+.hovering div:first-child{   
+    border-right:1px solid  #e5e5e5;
+    background-color: #FFF;
+    color:#000;
+} 
+
+
+/* hover 기능 적용 */
+.hovering div:first-child:hover{
+    background-color: #FFF;
+    color:#000;
+}
+
+.hovering div:last-child:hover{
+    background-color: #FFF;
+    color:#000;
+}
+
+/* 호버 관련해서 선택자는 결국 cascading 하는 성질때문에 non-cascade한 선택을 할 수 없음. 
+   스크립트 구성필요 */
+
+.domesticaldetail, .overseascaldetail{
+    margin-left:30px;
+}
+
+.detailrepresent{
+    font-size:13px;
+    font-weight:bold;
+    font-family: 'Verdana';
+    letter-spacing: -1px;
+    color:#0064b0;;
+  
+}
+
+.domesticallist{
+    font-size:12px;
+    color:#337AB7;
+    display:flex;
+    width:230px;
+    margin:0;
+   
+}
+
+.event img{
+    width:240px;
+}
+
+.links{
+    display:flex;
+    background-color: #f7f7f7;
+    border: 1px solid #e5e5e5;
+}
+
+.linktop, .linkbottom{
+    height:39px;
+}
+
+.linktop, .linkbottom, .linkcontents{
+    display:flex;
+    flex-direction: row;
+}
+.podcast, .rss ,.sns, .ical{
+    display:flex;
+    flex-direction:row;
+    justify-content: flex-start;
+    align-items:center;
+    margin:0;
+    padding:0;  
+}
+.podcast, .sns{
+    width:325px;
+}
+
+.rss, .ical{
+    width:295px;
+}
+.linkimage{
+    height:27px;
+    margin:0 4px;
+}
+.shortcut{
+    width:698px;
+    height:80px;
+    margin:10px 0 10px 10px;
+}
+
+.linkcontents{
+    font-size:11px;
+    color:#337ab7;
+    margin:8px 6px 0 0;
+    font-family:'dotum';
+}
+
+.linkcontents li{
+    padding:1px;
+    margin-right:3px;
+    letter-spacing: -1px;
+}
+
+.appinstall{
+    margin:10px 0;
+    width:225px;
+    height:80px;
+    border-left: 1px solid #e3e3e3;
 }
