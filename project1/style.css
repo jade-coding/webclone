@@ -90,7 +90,11 @@ input{
    justify-content:flex-end;
    align-items: flex-start;
 }
- 
+
+nav.mainnav {
+    position: relative;
+    bottom: -3px;
+}
     
 .mainnav,.highlight{
     position:relative;
@@ -169,6 +173,9 @@ input{
     border-right:1px solid #e5e5e5;
 
 }
+.bibleresearch, .beliefguide{
+    margin-left:30px;
+}
 
 .bibleresearch{
     background:url(./assets/titleResearch.jpg);
@@ -188,10 +195,52 @@ input{
     flex-wrap: nowrap;
 }
 
-
 .contentcenter{
     width:289px;
+    height:170px;
     border-right:1px solid #e5e5e5;
+}
+.missioncalendar{
+    margin-top:25px;
+}
+
+.calendartop{
+    margin-left:30px;
+}
+
+.calendarbottom{
+    height:159px;
+}
+
+.newstop{
+    display:flex;
+    justify-content: flex-start;
+    width:230px;
+    height:35px;
+    margin:0;
+}
+.newstitle{
+    width:160px;
+    height:35px;
+}
+
+
+.newsdesc{
+    display:block;
+    height:50px;
+    line-height: 170%;
+    margin-top:5px;
+}
+
+.newsdesc p{
+    color:#666666;
+}
+
+.newsdesc.over{
+    display:none;
+}
+.newsdesc:first-child{
+    border-bottom: 1px solid #eee;
 }
 
 .hovering{
@@ -236,25 +285,38 @@ input{
 
 .domesticaldetail, .overseascaldetail{
     margin-left:30px;
+    width:230px;
 }
 
 .detailrepresent{
+    width:202px;
+    height:38px;
     font-size:13px;
     font-weight:bold;
     font-family: 'Verdana';
     letter-spacing: -1px;
-    color:#0064b0;;
+    color:#0064b0;
+    margin:0;
+    line-height: 2.923076923076923;
   
 }
 
+.dayofweek{
+    font-size:10px;
+}
 .domesticallist{
     font-size:12px;
     color:#337AB7;
     display:flex;
     width:230px;
     margin:0;
-   
 }
+
+/* 아직 hover 기능 구현 전 상태 */
+.overseascaldetail{ 
+    display:none;
+}
+
 
 .event img{
     width:240px;
@@ -265,6 +327,9 @@ input{
     background-color: #f7f7f7;
     border: 1px solid #e5e5e5;
 }
+.linktop{
+    border-bottom: 1px solid #e3e3e3;
+}
 
 .linktop, .linkbottom{
     height:39px;
@@ -273,6 +338,10 @@ input{
 .linktop, .linkbottom, .linkcontents{
     display:flex;
     flex-direction: row;
+}
+
+.linkpop{
+    height:17.59px;
 }
 .podcast, .rss ,.sns, .ical{
     display:flex;
@@ -304,6 +373,7 @@ input{
     color:#337ab7;
     margin:8px 6px 0 0;
     font-family:'dotum';
+    line-height: 0.7;
 }
 
 .linkcontents li{
@@ -317,4 +387,65 @@ input{
     width:225px;
     height:80px;
     border-left: 1px solid #e3e3e3;
+}
+
+.bottomnav{
+    display:block;;
+    width:950px;
+    height:37.141px;
+    padding:10px 10px 10px 0;
+    border-bottom:2px solid #ccc; 
+}
+.bottomnavlist{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin:0;
+}
+
+.bottomnavlist li{
+   text-align:center;
+   padding:0 13px;
+   margin:0;
+   border-left:1px solid #ccc
+}
+ 
+.foot1{
+    display:flex;
+    justify-content: space-between;
+    height:105px;
+    margin:30px 0 0 0;
+    line-height: 150%;
+}
+.foot1 div{
+    margin:0;
+}
+
+.churchinfo{
+    width:700px;
+    height:75px;
+    color:#777777;
+    font-size:11px;
+    font-family: '돋움', 'Dotum', Baekmuk Dotum, Undotum, Apple Gothic, Latin font, sans-serif;
+}
+
+.churchinfo a{
+    color:inherit;
+    letter-spacing: -1;
+}
+.stronginfo{
+    color:#666666;
+    font-family: Verdana;
+    font-weight:900;
+    letter-spacing: -1;
+}
+
+.foot2{
+    display:flex;
+    justify-content: space-between;
+}
+
+.foot2 p, .foot2 img {
+    margin:0;
 }
