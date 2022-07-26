@@ -1,0 +1,205 @@
+*{
+    box-sizing: border-box;
+}
+h1, h2, h3{
+    font-family: 'Cormorant SC', serif;
+
+}
+button{
+    border:0;
+    outline:0;
+    background:rgb(72, 190, 211);
+    color:white;
+    width:140px;
+    height:40px;
+}
+
+.mainside{
+    display:block;
+    background-image: url(./assets/main_img.jpg);
+    background-size:cover;
+    width:100%;
+    height:600px;
+    background-repeat: no-repeat; 
+}
+
+.mainlogo{
+position:relative;
+display:block;
+top:188px;
+left:47px;
+margin:0;
+padding-left:20px;
+font-size:25px;
+font-weight:bold;
+font-family: 'Cormorant SC', serif;
+color:lightcoral;
+border:4px solid lightcoral;
+width:450px;
+}
+.mainlogo p{
+    font-size:15px;
+    font-weight: 400;
+    color:lightcoral;
+}
+
+
+.maindesc{
+    display:flex;
+    flex-wrap: nowrap;
+    flex-direction:row;
+    padding:0 30px;
+}
+.mainDescDetail{
+    width:50%;
+    margin:0 15px;
+}
+.mainDescDetail > h2{
+    color:rgb(72, 190, 211);
+    font-size:40px;
+}
+
+.mainDescDetail > h3{
+    font-size:25px;
+}
+
+.mainDescDetail.right{
+    position:relative;
+    top:140px;
+    height:390px;
+}
+
+.introduce{
+    background-color: rgb(241, 239, 239);
+    padding:10px 30px 20px;
+}
+
+.introduce > h2{
+    font-size:45px;
+    margin-bottom:20px;
+}
+
+.introduce > ul{
+    display:flex;
+    flex-wrap:nowrap;
+    flex-direction:row;
+    padding:0;
+}
+
+.list{
+    display:block;
+    width:33.3%;
+    text-align: center;  
+    padding:3px 0;
+}
+.list.selected{
+    color:white;
+    background-color: rgb(72, 190, 211);
+}
+
+.listdesc{
+    background-color:white;
+    height:260px;
+    margin-top: -16px;
+    padding: 15px
+}
+
+.listdesc p:nth-child(2){
+    color:rgb(72, 190, 211);;
+}
+
+.showproduct{
+    display:flex;
+    padding:50px 30px;
+}
+
+.showproduct img{
+    width:200px;
+    height:auto;
+
+}
+.productdesc{
+    display:flex;
+    flex-direction:column;
+    padding:20px;
+}
+
+
+.chapter{
+    display:flex;
+    padding:20px 30px;
+    margin-bottom:30px;
+}
+
+
+.chapter div{
+    width:420px;
+}
+
+
+#chapter1{
+    font-size:50px;
+}
+
+.chapterdesc{
+    display:flex;
+    align-items: flex-start;
+    background-color: rgb(72, 190, 211);
+}
+.chapterdesc h1{
+    height:100%;
+    font-size:30px;
+    color:white;
+    padding-left:25px;
+}
+
+.chapterdesc *:nth-child(n){
+    width:210px;
+}
+
+.chapter p{
+    padding:10px;
+    line-height: 2;
+}
+
+article{
+    padding:30px;
+}
+
+article h2{
+    font-size:45px;
+    margin:0;
+}
+article span{
+    color:rgb(138, 133, 124);
+}
+
+.articledesc{
+    display:flex;
+    margin-top:25px;
+}
+
+.articledesc p:first-child{
+    display:block;
+    background-color:rgb(229, 229, 229);
+    margin:0;
+    flex-shrink: 0;
+    width:50%;
+    line-height: 2.5;
+    padding:70px 35px;
+    
+ 
+}
+
+.articledescdetail{
+    display:flex;
+    flex-direction: column;
+    margin-left:20px;
+    line-height:1.5;
+}
+
+.articledescdetail img{
+    width:150px;
+    height:150px;
+    border-radius: 50%;
+}
