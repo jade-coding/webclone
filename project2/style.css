@@ -295,5 +295,74 @@ font-size:40px;
 footer{
     display:flex;
     padding:0 80px;
+    margin-top:60px;
+}
+.contact{
+   width:30%;
+   flex-shrink: 0;
+}
+.contact h2{
+    font-size: 40px;
 }
 
+.contactinfo{
+    font-size:35px;
+    margin:0;
+}
+
+.contactinfo.tel{
+    color:rgb(72, 190, 211);
+}
+
+.contactinfo.email{
+    font-family: sans-serif;
+    font-weight: 400;
+}
+
+.sign{
+    background-color:rgb(229, 229, 229);
+    padding-left:30px;
+}
+.sign h2{
+    font-size:30px;
+}
+
+.signform{
+    padding:0;
+    margin:0;
+
+}
+.signform input{
+    border:0;
+    padding-left:10px;
+    margin:0;
+    height:40px;
+    width:350px;
+}
+
+.signform button{
+margin-left:-3px;
+
+}
+
+.sns{
+    padding-left:0;
+}
+.snsitem{
+    display:inline-block;
+    margin-top:10px;
+    margin-right:5px;
+}
+ 
+.snsitem img{
+    width:20px;
+}
+
+.bottomside{
+    height:130px;
+    padding-top:30px;
+    background-color:black;
+    color:white;
+    text-align: center;
+
+}
