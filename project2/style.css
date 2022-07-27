@@ -1,6 +1,10 @@
 *{
     box-sizing: border-box;
 }
+body{
+    width:1200px;
+    margin:0 auto;
+}
 h1, h2, h3{
     font-family: 'Cormorant SC', serif;
 
@@ -13,7 +17,10 @@ button{
     width:140px;
     height:40px;
 }
-
+.detaildesc{
+    display:block;
+    width:512px;
+}
 .mainside{
     display:block;
     background-image: url(./assets/main_img.jpg);
@@ -129,36 +136,44 @@ width:450px;
     display:flex;
     padding:20px 30px;
     margin-bottom:30px;
+    width:100%;
 }
 
 
 .chapter div{
-    width:420px;
+    width:50%;
 }
 
 
-#chapter1{
-    font-size:50px;
+.chapternum{
+    font-size:70px;
 }
 
 .chapterdesc{
     display:flex;
     align-items: flex-start;
     background-color: rgb(72, 190, 211);
+    width:100%;
 }
 .chapterdesc h1{
-    height:100%;
-    font-size:30px;
+    font-size:40px;
     color:white;
-    padding-left:25px;
-}
-
+    padding-top:20px;
+    padding-left:35px;
+    width:100%;
+    display:block;
+    flex-shrink:0;
+/* 
 .chapterdesc *:nth-child(n){
-    width:210px;
+    width:250px;
+} */
 }
-
+.chapterdesc img{
+    width:100%;
+    
+}
 .chapter p{
-    padding:10px;
+    /* padding:10px; */
     line-height: 2;
 }
 
@@ -203,3 +218,82 @@ article span{
     height:150px;
     border-radius: 50%;
 }
+
+
+.chapternum.two{
+    text-align: center;
+    line-height:3em;
+    width:50%;
+    height:250px;
+    flex-shrink:0;
+    margin:0;
+}
+
+.chaptergrid{
+    display:flex;
+    flex-wrap:wrap;
+}
+.chaptergrid img{
+    width:50%;
+    height:250px;
+    
+}
+
+.chaptergrid h2{
+    font-size:40px;
+    width:50%;
+    color:white;
+    background-color: rgb(72, 190, 211);
+    padding-top:20px;
+    padding-left:35px;
+    margin:0;
+}
+
+.workshopdesc{
+    padding-left:20px;
+    padding-top:220px;
+}
+
+.collection{
+    text-align: center;
+    padding:0 30px;
+}
+
+#collectionName{
+    margin-bottom: 20px;
+    font-size:50px;
+}
+
+.collectionbox{
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.collectionimg{
+    width:33.3%;
+
+}
+
+.endsentence{
+    background-image: url(./assets/endsentenceimg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:700px;
+    margin:0 30px;
+    text-align:center;
+
+}
+
+.endsentence h2{
+font-size:40px;
+}
+
+.endsentence p{
+    color:rgb(171, 171, 171);
+}
+
+footer{
+    display:flex;
+    padding:0 80px;
+}
+
